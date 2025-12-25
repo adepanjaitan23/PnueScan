@@ -48,7 +48,7 @@ pnuescan/
     ├── home.html           # Halaman utama (Upload)
     └── predict.html        # Halaman hasil prediksi
 ```
-##⚙️ Prasyarat Instalasi
+## ⚙️ Prasyarat Instalasi
 Sebelum menjalankan aplikasi, pastikan komputer Anda telah terinstal:
 1. Python 3.8 atau versi yang lebih baru.
 2. PIP (Python Package Installer).
