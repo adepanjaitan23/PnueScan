@@ -1,0 +1,60 @@
+{% extends "base.html" %} {% block title %}Home - PneumoScan{% endblock %} {% block content %}
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="hero-kicker">Chest X Ray Analysis</p>
+      <h1 class="hero-title">Pneumonia Detection</h1>
+      <p class="hero-subtitle">Sistem deep learning yang membantu mengidentifikasi indikasi pneumonia pada citra X Ray dada. Dirancang sebagai alat bantu klinis yang cepat dan konsisten.</p>
+      <a href="{{ url_for('predict') }}" class="hero-btn">Mulai Prediksi</a>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-image-frame">
+        <!-- pakai gambar X Ray sendiri, misal static/img/xray-hero.png -->
+        <img src="{{ url_for('static', filename='references/NORMAL/Normal.jpg') }}" alt="Chest X Ray illustration" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-light">
+  <div class="section-inner">
+    <h2 class="section-title">Keunggulan Sistem</h2>
+
+    <div class="feature-grid">
+      <div class="feature-item">
+        <div class="feature-icon">📈</div>
+        <h3>Model Terlatih</h3>
+        <p>Dilatih di atas dataset X Ray pneumonia publik dengan arsitektur MobileNetV2.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">⚡</div>
+        <h3>Prediksi Cepat</h3>
+        <p>Proses inferensi beberapa detik per citra, cocok untuk workflow klinis.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🚨</div>
+        <h3>Predict Alert</h3>
+        <p>Hasil dari Prediksi ini, bukanlah hasil diagnosa final. informasi lebih jelas hubungi dokter terkait</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-light section-split">
+  <div class="section-inner split-inner">
+    <div class="split-image">
+      <!-- bisa pakai gambar kursi diganti dengan X Ray close up atau icon -->
+      <img src="{{ url_for('static', filename='references/PNEUMONIA/Pneumonia.jpg') }}" alt="Detail X Ray" />
+    </div>
+    <div class="split-text">
+      <h2 class="section-title">Pipeline Konsisten</h2>
+      <p class="section-body">Citra yang diupload akan diproses dengan ukuran dan normalisasi yang sama seperti saat proses training. Hal ini menjaga konsistensi antara performa model di laboratorium dan di lingkungan produksi.</p>
+      <p class="section-body">Output utama berupa probabilitas pneumonia, label klasifikasi, dan nilai confidence yang memudahkan interpretasi klinis.</p>
+      <a href="{{ url_for('predict') }}" class="secondary-btn"> Lihat Cara Kerja </a>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

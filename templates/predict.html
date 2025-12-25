@@ -1,0 +1,82 @@
+{% extends "base.html" %} {% block title %}Prediksi - PneumoScan{% endblock %} {% block content %}
+
+<section class="section-light">
+  <div class="section-inner upload-layout">
+    <div class="upload-left">
+      <h2 class="section-title">Upload X Ray</h2>
+      <p class="section-body">Pilih citra X Ray dada pasien untuk dianalisis. Sistem akan mengeluarkan prediksi NORMAL atau PNEUMONIA beserta probabilitasnya.</p>
+
+      <form method="POST" enctype="multipart/form-data" class="upload-form">
+        <label for="image" class="upload-dropzone">
+          <span class="upload-title">Klik untuk memilih file</span>
+          <span class="upload-subtitle">atau drag n drop citra di sini</span>
+          <span class="upload-note">Format didukung JPG, JPEG, PNG</span>
+        </label>
+        <input type="file" name="image" id="image" accept="image/*" required />
+
+        <button type="submit" class="hero-btn upload-btn">Prediksi Sekarang</button>
+      </form>
+
+      {% if error_msg %}
+      <p class="error-text">{{ error_msg }}</p>
+      {% endif %}
+    </div>
+
+    <div class="upload-right">
+      {% if prediction %}
+      <div class="result-card">
+        <h3 class="result-title">Hasil Prediksi</h3>
+
+        {% if uploaded_image %}
+        <div class="result-image-frame">
+          <img src="{{ uploaded_image }}" alt="Uploaded X Ray" />
+        </div>
+        {% endif %}
+
+        <p class="result-label-line">
+          Label: {% if prediction.label == "NORMAL" %}
+          <span class="badge badge-normal">{{ prediction.label }}</span>
+          {% else %}
+          <span class="badge badge-pneu">{{ prediction.label }}</span>
+          {% endif %}
+        </p>
+
+        <p class="result-metric">
+          Probabilitas PNEUMONIA
+          <span>{{ "%.3f"|format(prediction.prob_pneumonia) }}</span>
+        </p>
+        <p class="result-metric">
+          Confidence prediksi
+          <span>{{ "%.1f"|format(prediction.confidence * 100) }}%</span>
+        </p>
+        <p class="result-metric">
+          Threshold keputusan
+          <span>{{ "%.2f"|format(threshold) }}</span>
+        </p>
+      </div>
+      {% else %}
+      <div class="result-placeholder">
+        <p>Belum ada hasil prediksi.</p>
+        <p>Upload satu citra X Ray untuk melihat hasil di sini.</p>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% if prediction and ref_images %}
+<section class="section-light">
+  <div class="section-inner">
+    <h2 class="section-title">Contoh Citra Kelas "{{ prediction.label }}"</h2>
+    <p class="section-body">Berikut beberapa citra referensi dari kelas yang sama, berguna untuk membandingkan pola visual secara cepat.</p>
+
+    <div class="ref-grid">
+      {% for ref in ref_images %}
+      <div class="ref-item">
+        <img src="{{ ref }}" alt="Reference image" />
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %} {% endblock %}

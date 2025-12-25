@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}Pneumonia Detection{% endblock %}</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header class="top-header">
+        <nav class="top-nav">
+          <div class="nav-logo">Pneumo<span>Scan</span></div>
+          <ul class="nav-menu">
+            <li><a href="{{ url_for('home') }}">Beranda</a></li>
+            <li><a href="{{ url_for('predict') }}">Prediksi</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      {% block content %}{% endblock %}
+    </div>
+  </body>
+</html>
