@@ -87,7 +87,7 @@ python app.py
 5. Akses di Browser
 Buka browser (Chrome, Firefox, dll) dan kunjungi alamat berikut: http://127.0.0.1:5000 atau http://localhost:5000
 
-##🧪 Contoh Penggunaan
+## 🧪 Contoh Penggunaan
 1. Buka halaman utama aplikasi di browser.
 2. Klik tombol "Choose File" atau "Upload Image".
 3. Pilih gambar X-Ray paru-paru.
@@ -95,7 +95,7 @@ Tips: Jika Anda tidak memiliki gambar X-Ray, gunakan gambar yang ada di folder s
 4. Klik tombol "Predict".
 5. Sistem akan menampilkan hasil analisis apakah paru-paru tersebut Normal atau terindikasi Pneumonia.
 
-##🤝 Kontribusi
+## 🤝 Kontribusi
 Kontribusi selalu diterima! Jika Anda ingin meningkatkan performa model, memperbaiki bug, atau mempercantik tampilan:
 1. Fork repositori ini.
 2. Buat branch fitur baru (git checkout -b fitur-keren-anda).
