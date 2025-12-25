@@ -32,7 +32,6 @@ Proyek ini dibangun di atas tumpukan teknologi berikut:
 ---
 
 ## 📂 Susunan Proyek
-
 Berikut adalah struktur direktori dari repositori ini:
 ```bash
 pnuescan/
@@ -48,9 +47,18 @@ pnuescan/
     ├── base.html           # Layout dasar
     ├── home.html           # Halaman utama (Upload)
     └── predict.html        # Halaman hasil prediksi
-
+```
 ##⚙️ Prasyarat Instalasi
 Sebelum menjalankan aplikasi, pastikan komputer Anda telah terinstal:
 1. Python 3.8 atau versi yang lebih baru.
 2. PIP (Python Package Installer).
 3. Git (Opsional, untuk clone repository).
+
+## 🚀 Cara Menjalankan (Instalasi)
+Ikuti langkah-langkah berikut untuk menjalankan PnueScan di komputer lokal (Localhost):
+1. Clone Repositori
+Unduh kode sumber proyek ini ke komputer Anda.
+```bash
+git clone [https://github.com/username-anda/pnuescan.git](https://github.com/username-anda/pnuescan.git)
+cd pnuescan
+```
