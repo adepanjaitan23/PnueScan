@@ -62,3 +62,43 @@ Unduh kode sumber proyek ini ke komputer Anda.
 git clone [https://github.com/username-anda/pnuescan.git](https://github.com/username-anda/pnuescan.git)
 cd pnuescan
 ```
+2. Buat Virtual Environment (Disarankan)
+Sangat disarankan menggunakan virtual environment agar library tidak bentrok.
+Windows:
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+macOS / Linux:
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+3. Install Dependensi
+Install semua library yang dibutuhkan yang terdaftar di requirements.txt.
+```bash
+pip install -r requirements.txt
+```
+4. Jalankan Aplikasi
+Jalankan server Flask dengan perintah:
+```bash
+python app.py
+```
+5. Akses di Browser
+Buka browser (Chrome, Firefox, dll) dan kunjungi alamat berikut: http://127.0.0.1:5000 atau http://localhost:5000
+
+##🧪 Contoh Penggunaan
+1. Buka halaman utama aplikasi di browser.
+2. Klik tombol "Choose File" atau "Upload Image".
+3. Pilih gambar X-Ray paru-paru.
+Tips: Jika Anda tidak memiliki gambar X-Ray, gunakan gambar yang ada di folder static/references/.
+4. Klik tombol "Predict".
+5. Sistem akan menampilkan hasil analisis apakah paru-paru tersebut Normal atau terindikasi Pneumonia.
+
+##🤝 Kontribusi
+Kontribusi selalu diterima! Jika Anda ingin meningkatkan performa model, memperbaiki bug, atau mempercantik tampilan:
+1. Fork repositori ini.
+2. Buat branch fitur baru (git checkout -b fitur-keren-anda).
+3. Commit perubahan Anda (git commit -m 'Menambahkan fitur keren').
+4. Push ke branch (git push origin fitur-keren-anda).
+5. Buat Pull Request baru.
