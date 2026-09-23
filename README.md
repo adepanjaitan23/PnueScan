@@ -1,4 +1,4 @@
-# 🫁 PnueScan: AI-Powered Pneumonia Detection
+## 🫁 PnueScan: AI-Powered Pneumonia Detection
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.0%2B-orange?style=for-the-badge&logo=tensorflow)
