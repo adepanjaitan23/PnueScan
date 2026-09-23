@@ -1,11 +1,43 @@
 ## 🫁 PnueScan: AI-Powered Pneumonia Detection
+<img src="./assets/banner.jpg" alt="Potato Inpainting Banner" width="100%">
 
+## 🫁 PneuScan
+**AI-Powered Pneumonia Detection Web Application**
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.0%2B-orange?style=for-the-badge&logo=tensorflow)
 ![Flask](https://img.shields.io/badge/Flask-Web%20App-lightgrey?style=for-the-badge&logo=flask)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+<br>
 
-**PnueScan** adalah aplikasi web sederhana namun canggih yang memanfaatkan *Deep Learning* untuk mendeteksi indikasi **Pneumonia** berdasarkan citra X-Ray dada (Chest X-Ray). Proyek ini dibangun menggunakan Python, Flask, dan TensorFlow.
+![Tampilan Antarmuka PneuScan](web1.PNG)[cite: 11]
+
+</div>
+
+**PneuScan** adalah aplikasi web interaktif yang memanfaatkan *Deep Learning* untuk mendeteksi indikasi **Pneumonia** berdasarkan citra X-Ray dada (*Chest X-Ray*). Dibangun menggunakan ekosistem Python, Flask, dan TensorFlow, proyek ini mengemas model klasifikasi medis yang kompleks ke dalam antarmuka yang ramah pengguna untuk keperluan skrining awal.
+
+> 💡 **Disclaimer:** Sistem ini dibangun untuk keperluan eksperimen dan edukasi *Machine Learning*. Hasil prediksi tidak dapat menggantikan diagnosis medis dari tenaga profesional.
+
+---
+
+## 🌟 Fitur Utama
+
+- 🧠 **Deteksi Cepat & Akurat:** Mengklasifikasikan citra X-Ray ke dalam kategori **NORMAL** atau **PNEUMONIA** secara otomatis.
+- 🖥️ **Antarmuka User-Friendly:** Desain web sederhana yang memungkinkan pengguna mengunggah gambar dan melihat hasil diagnosis langsung dari *browser* tanpa menyentuh kode.
+- 📦 **Pre-trained CNN Model:** Didukung oleh model *Convolutional Neural Network* (CNN) yang telah dievaluasi menggunakan dataset citra medis berskala besar.
+- 🖼️ **Dukungan Format Universal:** Kompatibel dengan format gambar standar seperti `.jpg`, `.jpeg`, dan `.png`.
+- 🧪 **Data Uji Tersedia:** Dilengkapi dengan contoh gambar X-Ray bawaan di dalam repositori untuk kemudahan pengujian instan.
+
+---
+
+## 📸 Contoh Hasil Prediksi
+
+Sistem akan menampilkan visualisasi citra yang diunggah beserta label probabilitas (*confidence score*) secara langsung pada antarmuka web.
+
+**1. Hasil Analisis - Kategori NORMAL**
+![Hasil Prediksi Normal](web-normal.PNG)[cite: 9]
+
+**2. Hasil Analisis - Kategori PNEUMONIA**
+![Hasil Prediksi Pneumonia](web-PNEUMONIA.PNG)[cite: 10]
 
 ---
 
