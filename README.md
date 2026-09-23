@@ -1,5 +1,5 @@
 ## 🫁 PnueScan: AI-Powered Pneumonia Detection
-<img src="./assets/banner.jpg" alt="Potato Inpainting Banner" width="100%">
+<img src="./assets/banner.jpg" alt="PneuScan Banner" width="100%">
 
 ## 🫁 PneuScan
 **AI-Powered Pneumonia Detection Web Application**
@@ -9,13 +9,13 @@
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 <br>
 
-![Tampilan Antarmuka PneuScan](web1.PNG)[cite: 11]
+<img src="./assets/web1.PNG" alt="Tampilan Antarmuka PneuScan" width="100%">
 
 </div>
 
 **PneuScan** adalah aplikasi web interaktif yang memanfaatkan *Deep Learning* untuk mendeteksi indikasi **Pneumonia** berdasarkan citra X-Ray dada (*Chest X-Ray*). Dibangun menggunakan ekosistem Python, Flask, dan TensorFlow, proyek ini mengemas model klasifikasi medis yang kompleks ke dalam antarmuka yang ramah pengguna untuk keperluan skrining awal.
 
-> 💡 **Disclaimer:** Sistem ini dibangun untuk keperluan eksperimen dan edukasi *Machine Learning*. Hasil prediksi tidak dapat menggantikan diagnosis medis dari tenaga profesional.
+> 💡 **Disclaimer:** Sistem ini dibangun untuk keperluan eksperimen dan edukasi *Machine Learning*. Hasil prediksi belum dapat menggantikan diagnosis medis dari tenaga profesional.
 
 ---
 
@@ -34,10 +34,10 @@
 Sistem akan menampilkan visualisasi citra yang diunggah beserta label probabilitas (*confidence score*) secara langsung pada antarmuka web.
 
 **1. Hasil Analisis - Kategori NORMAL**
-![Hasil Prediksi Normal](web-normal.PNG)[cite: 9]
+<img src="./assets/web-normal.PNG" alt="Hasil Prediksi Normal" width="100%">
 
 **2. Hasil Analisis - Kategori PNEUMONIA**
-![Hasil Prediksi Pneumonia](web-PNEUMONIA.PNG)[cite: 10]
+<img src="./assets/web-PNEUMONIA.PNG" alt="Hasil Prediksi PNEUMONIA" width="100%">
 
 ---
 
