@@ -3,15 +3,14 @@
 
 ## 🫁 PneuScan
 **AI-Powered Pneumonia Detection Web Application**
+<img src="./assets/web1.PNG" alt="Tampilan Antarmuka PneuScan" width="100%">
+
+<br>
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.0%2B-orange?style=for-the-badge&logo=tensorflow)
 ![Flask](https://img.shields.io/badge/Flask-Web%20App-lightgrey?style=for-the-badge&logo=flask)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 <br>
-
-<img src="./assets/web1.PNG" alt="Tampilan Antarmuka PneuScan" width="100%">
-
-</div>
 
 **PneuScan** adalah aplikasi web interaktif yang memanfaatkan *Deep Learning* untuk mendeteksi indikasi **Pneumonia** berdasarkan citra X-Ray dada (*Chest X-Ray*). Dibangun menggunakan ekosistem Python, Flask, dan TensorFlow, proyek ini mengemas model klasifikasi medis yang kompleks ke dalam antarmuka yang ramah pengguna untuk keperluan skrining awal.
 
